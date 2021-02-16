@@ -1,0 +1,81 @@
+1. Given a list of names, try printing unique names that are less than 5 character length and doesn't contain the character 'e'.   
+
+names = ["john", "jake", "jack", "george", "jenny", "jason","jason"]
+
+names_set=set(names) # creating set just in case if list has duplicate
+
+#print(names)
+
+#print(names_set)
+
+for i in names_set:
+
+    if len(i)<5 and "e" not in (i):
+
+       print(i)
+  
+
+   
+
+   
+
+2. Given a string python, try printing cython using slicing [start:stop] and concatenation. +
+
+str="PYTHON"
+
+print(str)
+
+print("C"+str[1:len(str)])
+
+ 
+ 
+
+3.Given a dictionary {"name": "python", "ext": "py", "creator": "guido"}, print both keys and values.
+
+dict={"name": "python", "ext": "py", "creator": "guido"}
+
+key_dict = dict.keys()
+
+value_dict = dict.values()
+
+print(key_dict)
+
+print(value_dict)
+
+
+
+4.Do FizzBuzz in Python
+
+ a=int(input("Enter a Number: "))
+
+print(a)
+
+if a%3==0 and a%5==0:
+
+  print("FizzBuzz")
+
+elif a%3==0:
+
+  print("Fizz")
+
+elif a%5==0:
+
+  print("Buzz")
+
+  
+
+5.Guessing Game. Accept a guess number and tell us if it's higher or less than the hardcoded number 
+
+a=int(input("Enter a Number: "))
+
+num=10
+
+#print(a)
+
+if a>num:
+
+  print(str(a) +" is greater than 10")
+
+else:
+
+  print(str(a) +" is less than 10")
